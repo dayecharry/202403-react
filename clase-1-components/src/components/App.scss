@@ -1,0 +1,12 @@
+.title{
+    color:purple;
+}
+.paragraph{
+    color:fuchsia;
+    font-weight: bold;
+    
+    &_blue{
+        color: blue;
+    }
+    
+}
