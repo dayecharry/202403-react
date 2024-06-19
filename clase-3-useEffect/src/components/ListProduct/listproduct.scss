@@ -1,0 +1,11 @@
+.card{
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightsteelblue;
+    margin: 10px;
+
+    &_image{
+        width: 100%;
+    }
+}
