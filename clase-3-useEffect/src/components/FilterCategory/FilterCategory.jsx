@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function FilterCategory({ setFilterCategory }) {
+function FilterCategory({ setFilterCategory, filterCategory }) {
   const [categories, setCategories] = useState([]);
   // se ejecuta una sola vez cuando carga la pagina
   useEffect(() => {
@@ -16,7 +16,7 @@ function FilterCategory({ setFilterCategory }) {
   return (
     <div>
       <label htmlFor="">Selecciona tu categoria</label>
-      <select name="" id="" onChange={handleSelect}>
+      <select name="" id="" onChange={handleSelect} value={filterCategory}>
         <option value="">Seleccione</option>
         {categories.map((cat, i) => (
           <option value={cat} key={i}>
