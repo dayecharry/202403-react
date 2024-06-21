@@ -24,7 +24,7 @@ function App() {
           element={
             <AuthRoute
               user={userData}
-              component={<Profile token={userData.token} />}
+              component={<Profile data={userData} />}
             />
           }
         />

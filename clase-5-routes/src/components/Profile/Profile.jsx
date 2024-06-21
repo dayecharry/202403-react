@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { getDataUser } from "../services/api";
 
-function Profile({ token }) {
+function Profile({ data }) {
   const [data, setData] = useState(null);
   useEffect(() => {
-    getDataUser(token).then((info) => {
-      console.log(info);
-      setData(info);
-    });
+    if (data) {
+      getDataUser(data.token).then((info) => {
+        console.log(info);
+        setData(info);
+      });
+    }
   }, []);
   return (
     <div>
