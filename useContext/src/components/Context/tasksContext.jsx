@@ -19,6 +19,7 @@ export const useTasksContext = () => {
     setTasks([...tasks, newTask]);
   };
 
+  // eliminar una tarea clicada
   const deleteTask = () => {};
 
   return { tasks, addTask, deleteTask };
