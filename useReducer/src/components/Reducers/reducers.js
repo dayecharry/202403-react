@@ -12,8 +12,6 @@ export const reducer = (state, action) => {
     case "changeCp":
       return { ...state, address: { ...state.address, cp: action.payload } }
 
-
-
     default:
       break;
   }
